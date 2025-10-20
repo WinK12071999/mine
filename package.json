@@ -1,0 +1,28 @@
+{
+  "name": "gcsi-website",
+  "version": "1.0.0",
+  "description": "Global Care & Sports Initiatives Organization Website",
+  "main": "index.html",
+  "scripts": {
+    "build": "echo 'No build step required for static site'",
+    "dev": "python -m http.server 8000",
+    "start": "python -m http.server 8000"
+  },
+  "keywords": [
+    "nonprofit",
+    "charity",
+    "immigration",
+    "refugees",
+    "sports",
+    "care",
+    "ottawa",
+    "canada"
+  ],
+  "author": "GCSI Organization",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/gcsi-website.git"
+  },
+  "homepage": "https://gcsi-website.vercel.app"
+}

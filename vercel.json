@@ -1,0 +1,78 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "*.html",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/",
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en",
+      "dest": "/index-en.html"
+    },
+    {
+      "src": "/about",
+      "dest": "/about.html"
+    },
+    {
+      "src": "/about-en",
+      "dest": "/about-en.html"
+    },
+    {
+      "src": "/programs",
+      "dest": "/programs.html"
+    },
+    {
+      "src": "/programs-en",
+      "dest": "/programs-en.html"
+    },
+    {
+      "src": "/partnerships",
+      "dest": "/partnerships.html"
+    },
+    {
+      "src": "/partnerships-en",
+      "dest": "/partnerships-en.html"
+    },
+    {
+      "src": "/mining-resilience",
+      "dest": "/mining-resilience.html"
+    },
+    {
+      "src": "/mining-resilience-en",
+      "dest": "/mining-resilience-en.html"
+    },
+    {
+      "src": "/contact",
+      "dest": "/contact.html"
+    },
+    {
+      "src": "/contact-en",
+      "dest": "/contact-en.html"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "X-XSS-Protection",
+          "value": "1; mode=block"
+        }
+      ]
+    }
+  ]
+}
